@@ -1,5 +1,5 @@
 FROM alpine:3
 
-RUN apk add --update --quiet fish
+RUN apk add --update --quiet nmap-ncat fish
 ADD monitor.fish /monitor.fish
 ENTRYPOINT ["/usr/bin/fish", "monitor.fish"]
