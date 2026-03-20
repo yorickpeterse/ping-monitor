@@ -11,7 +11,7 @@ if ! test -n "$DB_PORT"
 end
 
 while true
-    sleep (random 180 300)
+    sleep (random 60 300)
 
     for host in $argv
         set msec (ping -q -c 5 $host | tail -n 1 | cut -d = -f 2 | cut -d / -f 2)
